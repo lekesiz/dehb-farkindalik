@@ -6,7 +6,7 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { useLocation } from "wouter";
-import { Brain, Shield, Heart, ArrowRight, Lock } from "lucide-react";
+import { Brain, Shield, Heart, ArrowRight, Lock, ExternalLink, Compass } from "lucide-react";
 import { motion } from "framer-motion";
 
 const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/hero-brain-Pfu6qHb2qD8fhboH2zEbE8.webp";
@@ -199,6 +199,46 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Reflektif Section */}
+      <section className="py-16 md:py-20">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.5 }}
+          >
+            <Card className="p-8 md:p-10 border-primary/15 bg-gradient-to-br from-primary/[0.03] to-accent/[0.05] overflow-hidden relative">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="relative flex flex-col lg:flex-row gap-8 items-start lg:items-center">
+                <div className="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+                  <Compass className="h-7 w-7 text-primary" />
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-xl md:text-2xl font-bold mb-2" style={{ fontFamily: 'var(--font-display)' }}>
+                    Kendini Daha Derinden Tanımak İster misin?
+                  </h3>
+                  <p className="text-muted-foreground leading-relaxed text-[15px] mb-4">
+                    <strong className="text-foreground">Reflektif</strong>, kişisel farkındalık ve gelişim yolculuğunda sana eşlik eden bir platformdur. 
+                    DEHB belirtilerinin ötesinde, güçlü yanlarını keşfetmeni, kendinle barışmanı ve potansiyelini 
+                    tam olarak kullanmanı destekleyen profesyonel araçlar sunar.
+                  </p>
+                  <a
+                    href="https://reflektif.net"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 text-primary font-semibold text-sm hover:underline underline-offset-4 transition-colors"
+                  >
+                    reflektif.net'i Keşfet
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                </div>
+              </div>
+            </Card>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 md:py-28 bg-primary/5">
         <div className="container text-center">
@@ -235,7 +275,18 @@ export default function Home() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>DEHB Farkındalık Aracı — Bilimsel temelli, anonim tarama</p>
-            <p>Bu araç tıbbi teşhis yerine geçmez. Profesyonel destek için bir uzmana başvurun.</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://reflektif.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                reflektif.net
+              </a>
+              <span className="text-border">|</span>
+              <p>Bu araç tıbbi teşhis yerine geçmez.</p>
+            </div>
           </div>
         </div>
       </footer>

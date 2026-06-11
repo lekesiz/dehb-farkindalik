@@ -9,7 +9,7 @@ import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useLocation } from "wouter";
 import { TestResult, resultContent, copingStrategies } from "@/lib/questions";
-import { ArrowLeft, RotateCcw, Heart, Lightbulb, AlertCircle } from "lucide-react";
+import { ArrowLeft, RotateCcw, Heart, Lightbulb, AlertCircle, ExternalLink, Compass } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Results() {
@@ -266,6 +266,50 @@ export default function Results() {
           </div>
         </motion.div>
 
+        {/* Reflektif CTA */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.75 }}
+          className="mb-12"
+        >
+          <Card className="p-8 md:p-10 border-accent/30 bg-gradient-to-br from-accent/[0.08] to-primary/[0.03] overflow-hidden relative">
+            <div className="absolute bottom-0 left-0 w-40 h-40 bg-accent/10 rounded-full translate-y-1/2 -translate-x-1/2" />
+            <div className="relative">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Compass className="h-5 w-5 text-primary" />
+                </div>
+                <h3 className="text-xl font-bold" style={{ fontFamily: 'var(--font-display)' }}>
+                  Gelişim Yolculuğuna Başla
+                </h3>
+              </div>
+              <p className="text-muted-foreground leading-relaxed text-[15px] mb-5 max-w-2xl">
+                {results.level === "high" 
+                  ? "DEHB belirtilerin yüksek çıktı — ama bu bir son değil, bir başlangıç. Reflektif, zihninin nasıl çalıştığını anlamanı, güçlü yanlarını keşfetmeni ve sana özel stratejiler geliştirmeni sağlayan bir kişisel gelişim platformudur."
+                  : results.level === "medium"
+                  ? "Bazı alanlarda zorluklar yaşıyorsun — bu çok normal. Reflektif, kendini daha iyi tanımanı, güçlü ve zayıf yanlarını keşfetmeni ve kişisel gelişim yolculuğunda sana rehberlik eden bir platformdur."
+                  : "Sonuçların düşük çıkmış olsa bile, kendini tanımak her zaman değerlidir. Reflektif, kişisel farkındalığını artırmak ve potansiyelini tam olarak kullanmak için profesyonel araçlar sunar."
+                }
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://reflektif.net"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-semibold text-sm rounded-lg hover:bg-primary/90 transition-all duration-200 active:scale-[0.97] shadow-sm"
+                >
+                  Reflektif'e Git
+                  <ExternalLink className="h-4 w-4" />
+                </a>
+                <p className="text-xs text-muted-foreground self-center">
+                  Kişisel farkındalık ve gelişim platformu
+                </p>
+              </div>
+            </div>
+          </Card>
+        </motion.div>
+
         {/* Disclaimer */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -316,7 +360,18 @@ export default function Results() {
         <div className="container">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>DEHB Farkındalık Aracı — Bilimsel temelli, anonim tarama</p>
-            <p>Bu araç tıbbi teşhis yerine geçmez. Profesyonel destek için bir uzmana başvurun.</p>
+            <div className="flex items-center gap-4">
+              <a
+                href="https://reflektif.net"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary transition-colors"
+              >
+                reflektif.net
+              </a>
+              <span className="text-border">|</span>
+              <p>Bu araç tıbbi teşhis yerine geçmez.</p>
+            </div>
           </div>
         </div>
       </footer>
