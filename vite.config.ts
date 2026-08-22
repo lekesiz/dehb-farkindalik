@@ -203,7 +203,9 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
+// External deployment profile: keep the Vite output independent from Manus
+// runtime, storage proxy, visual editor, and browser log collector.
+const plugins = [react(), tailwindcss()];
 
 export default defineConfig({
   plugins,

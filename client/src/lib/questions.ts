@@ -162,7 +162,7 @@ export const resultContent = {
     description: "Cevaplarına göre, günlük hayatında karşılaştığın zorluklar DEHB'den ziyade stres, yorgunluk veya geçici durumlardan kaynaklanıyor olabilir. Zihinsel odaklanma ve organizasyon becerilerin genel olarak iyi çalışıyor görünüyor.",
     advice: "Yine de zaman zaman odaklanma sorunu yaşıyorsan, bu tamamen normal. Uyku düzenine dikkat etmek, düzenli egzersiz yapmak ve mola vererek çalışmak sana yardımcı olacaktır. Stresli dönemlerde bu belirtiler artabilir — bu geçici bir durumdur.",
     color: "sage",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/result-low-gc86WTut7s7GjnQ455tib8.webp",
+    image: "https://github.com/lekesiz/dehb-farkindalik/releases/download/assets-v1/result-low.webp",
   },
   medium: {
     title: "Orta Düzey Belirtiler",
@@ -170,7 +170,7 @@ export const resultContent = {
     description: "Bazı durumlarda odaklanmakta, organize olmakta veya işlere başlamakta zorlandığını görüyoruz. Bu durumlar hayatını tamamen kilitlemese de, potansiyelini tam olarak kullanmanı engelliyor olabilir. Önemli olan şu: Bu senin 'tembelliğin' veya 'iradesizliğin' değil.",
     advice: "Kendini 'tembel' olarak etiketlemeyi bırakmanın zamanı geldi. Zihnin bazı görevlerde daha fazla uyarıcıya ihtiyaç duyuyor — bu yapısal bir durum. Pomodoro tekniği (25 dk çalışma, 5 dk mola), işleri küçük parçalara bölmek ve 'body doubling' (biriyle aynı ortamda çalışma) sana çok yardımcı olabilir. Bir psikolog veya psikiyatristle görüşmek, durumunu daha net anlamana yardımcı olacaktır.",
     color: "amber",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/result-medium-c6RQFixvgc9ZzKfxxGiioz.webp",
+    image: "https://github.com/lekesiz/dehb-farkindalik/releases/download/assets-v1/result-medium.webp",
   },
   high: {
     title: "Yüksek DEHB Belirtileri",
@@ -178,7 +178,7 @@ export const resultContent = {
     description: "Cevapların, DEHB (Dikkat Eksikliği ve Hiperaktivite Bozukluğu) ile oldukça uyumlu bir zihinsel profile sahip olduğunu gösteriyor. Yaşadığın erteleme sorunları, dağınıklık, odaklanma güçlüğü veya zihinsel felç KESİNLİKLE senin suçun veya iradesizliğin değil. Bu durum beyninin dopamin ve ödül sisteminin yapısal olarak farklı çalışmasından kaynaklanıyor.",
     advice: "Kendine yapabileceğin en büyük iyilik, zihnine karşı savaşmayı bırakıp onun nasıl çalıştığını anlamaktır. Profesyonel bir psikiyatristten destek almak, hayat kaliteni inanılmaz derecede artırabilir. DEHB tedavi edilebilir bir durumdur — ilaç tedavisi, terapi veya her ikisinin kombinasyonu çok etkili olabilir. Ayrıca zamanlayıcı kullanma, görevleri mikro-adımlara bölme ve 'body doubling' gibi stratejiler günlük hayatını kolaylaştıracaktır.",
     color: "terracotta",
-    image: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/result-high-WDNaFUrafo4DkMN5WU9fBS.webp",
+    image: "https://github.com/lekesiz/dehb-farkindalik/releases/download/assets-v1/result-high.webp",
   },
 };
 

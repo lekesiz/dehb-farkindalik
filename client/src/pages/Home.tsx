@@ -9,8 +9,8 @@ import { useLocation } from "wouter";
 import { Brain, Shield, Heart, ArrowRight, Lock, ExternalLink, Compass } from "lucide-react";
 import { motion } from "framer-motion";
 
-const heroImage = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/hero-brain-Pfu6qHb2qD8fhboH2zEbE8.webp";
-const introImage = "https://d2xsxph8kpxj0f.cloudfront.net/310419663028218705/RbGssWfduUyfoLFeDSYh2g/intro-illustration-chwEwywXf6bj9dSKcBfy6j.webp";
+const heroImage = "https://github.com/lekesiz/dehb-farkindalik/releases/download/assets-v1/hero-brain.webp";
+const introImage = "https://github.com/lekesiz/dehb-farkindalik/releases/download/assets-v1/intro-illustration.webp";
 
 export default function Home() {
   const [, setLocation] = useLocation();
